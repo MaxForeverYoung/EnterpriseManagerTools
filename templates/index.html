@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <h2>员工列表</h2>
+    {% for data in datas %}
+    <div>
+        职工工号：{{data.account_number}}<br />
+        姓名：{{data.name}}<br />
+        性别：{{data.sex}}<br />
+        手机号码：{{data.mobile_number}}<br />
+        出生日期：{{data.birthday}}<br />
+        电子邮箱：{{data.email}}<br />
+        国籍：{{data.nationality}}<br />
+        证件类型：{{data.id_type}}<br />
+        证件号码：{{data.id_no}}<br />
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
